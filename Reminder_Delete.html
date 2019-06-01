@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Delete Reminder</title>
+	</head>
+	
+	<body>
+		<div style="margin:auto;">
+
+			<h1 style="text-align:center;color:#77419b;font-family:Lucida Handwriting;color:purple;"><strong>Delete a Reminder</strong></h1>
+	
+		</div>
+		
+		<div style="margin:auto;">
+
+			<h1 style="color:#77419b;"><strong>Give the empID, memberID, ISBN, copyNr, date_of_borrowing, date_of_reminder you want to delete</strong></h1>
+	
+		</div>
+		
+		<form action="Reminder_Delete.php">
+		
+			Employer ID<br>
+			<input type="number" min="0" name='empID' value=' '>
+			<br>
+			<br>
+			
+			Member ID<br>
+			<input type="number" min="0" name='memberID' value=' '>
+			<br>
+			<br>
+			
+			ISBN<br>
+			<input type="number" min="0" name='ISBN' value=' '>
+			<br>
+			<br>
+			
+			Number of Copies<br>
+			<input type="number" min="0" name='copyNr' value=' '>
+			<br>
+			<br>
+			
+			date_of_borrowing<br>
+			<input type="date" min="0" name='date_of_borrowing' value=' '>
+			<br>
+			<br>
+			
+			date_of_reminder<br>
+			<input type="date" min="0" name='date_of_reminder' value=' '>
+			<br>
+			<br>
+			<input type="submit" value="Submit">
+			
+		</form>
+</html>
