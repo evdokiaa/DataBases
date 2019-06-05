@@ -22,7 +22,8 @@
 		mysqli_set_charset($conn, "utf8");		
 		$categoryName= $_GET['categoryName'];
 		
-		$result = mysqli_query($conn, "SELECT title,pubYear from book , belongs_to WHERE book.ISBN=belongs_to.ISBN and belongs_to.categoryName='$categoryName' ");
+		$result = mysqli_query($conn, "SELECT title,pubYear from book , belongs_to WHERE book.ISBN=belongs_to.ISBN and (belongs_to.categoryName='$categoryName'  
+                                                            or belongs_to.categoryName in (SELECT categoryName FROM category WHERE category.supercategoryName = '$categoryName'))");
 			
 			echo"<div style=\"margin:auto;\">";
  
